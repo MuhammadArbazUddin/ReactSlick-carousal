@@ -17,12 +17,13 @@
   font-size: 20px;
   margin-bottom: 30px;
 }
+
 .slick-slide {
   display: flex;
   justify-content: center;
-  align-items: center; /* This ensures cards are vertically centered */
-  height: auto; /* Ensure the height adjusts based on content */
-  padding: 20px 0px; /* Add padding to avoid content touching edges */
+  align-items: center;
+  height: auto;
+  padding: 20px 0px;
 }
 
 .testimonial-card {
@@ -33,10 +34,9 @@
   max-width: 80%;
   background-color: #fff;
   border-radius: 24px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-  min-height: 350px; /* Adjust the min-height to prevent cutting */
-  height: auto; /* Ensure the height grows based on content */
+  box-shadow: rgba(39, 53, 38, 0.1) 0px 0px 29px;
+  min-height: 350px;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -52,7 +52,22 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin-bottom: 10px;
+}
+
+/* Bigger stars for the rating */
+.product-rating {
+  display: flex;
+  justify-content: center;
+}
+
+.starT {
+  color: lightgray; /* Default color for unfilled stars */
+  font-size: 32px; /* Increase the size of the starTs */
+  margin: 0 2px; /* Adjust spacing between starTs */
+}
+
+.starT.filledT {
+  color: #ffd700; /* Color for filled stars */
 }
 
 .testimonial-review {
@@ -60,23 +75,22 @@
   font-family: Montserrat, sans-serif;
   text-align: center;
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* Limit to 5 lines */
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-top: 30px;
   color: #214842;
-  max-width: 90%; /* Adjust the width to make the paragraph narrower */
+  max-width: 90%;
   margin-left: auto;
-  margin-right: auto; /* Center the paragraph */
+  margin-right: auto;
 }
+
 .testimonial-name {
   text-align: center;
   font-size: 17px;
   font-family: Montserrat, sans-serif;
   margin: 30px 0px;
 }
-
-/* Other existing styles */
 
 /* Custom Dots */
 .slick-dots.custom-dots li {
@@ -97,7 +111,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray; /* Default inactive state */
+  background-color: lightgray;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -107,10 +121,5 @@
 }
 
 .slick-dots.custom-dots li.slick-active .custom-dot {
-  background-color: #258f67; /* Active state color (green) */
-}
-
-.custom-dot span {
-  display: inline-block;
-  font-size: 10px;
+  background-color: #258f67;
 }
